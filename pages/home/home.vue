@@ -65,7 +65,6 @@
 				if (res.meta.status !== 200) {
 					return uni.$showMsg('请求失败！')
 				}
-				uni.$showMsg();
 				this.swiperList = res.message;
 			},
 
@@ -78,7 +77,6 @@
 				if (res.meta.status !== 200) {
 					return uni.$showMsg('请求失败！')
 				}
-				uni.$showMsg();
 				this.navList = res.message;
 			},
 
@@ -91,7 +89,6 @@
 				if (res.meta.status !== 200) {
 					return uni.$showMsg('请求失败！')
 				}
-				uni.$showMsg();
 				// 增加url
 				res.message.forEach(floor => {
 					floor.product_list.forEach(prod => {
