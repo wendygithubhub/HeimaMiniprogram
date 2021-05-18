@@ -1,5 +1,7 @@
 <template>
 	<view>
+		<view class="searchTop"><my-search></my-search></view>
+		
 		<!-- 轮播图区域 -->
 		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true">
 			<swiper-item v-for="(item,i) in swiperList" key="i">
@@ -115,6 +117,11 @@
 </script>
 
 <style lang="scss">
+	.searchTop{
+		position: sticky;
+		top:0px;
+		z-index: 999;
+	}
 	swiper {
 		height: 330rpx;
 

@@ -50,7 +50,7 @@
 			getSystemInfoFunc() {
 				const sysInfo = uni.getSystemInfoSync();
 				// console.log(sysInfo);
-				this.wh = sysInfo.windowHeight;
+				this.wh = sysInfo.windowHeight - 50;
 			},
 			// 获取分类数组
 			async getCateList() {
